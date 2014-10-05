@@ -20,7 +20,7 @@ class Imlib2 < Formula
       --prefix=#{prefix}
       --enable-amd64=no
     ]
-    args << "--without-x" if build.without? "x"
+    # args << "--without-x" if build.without? "x"
 
     system "./configure", *args
     system "make install"
