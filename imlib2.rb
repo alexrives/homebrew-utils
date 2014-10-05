@@ -18,8 +18,12 @@ class Imlib2 < Formula
     args = %W[
       --disable-dependency-tracking
       --prefix=#{prefix}
-      --enable-amd64=no
     ]
+    # args = %W[
+    #   --disable-dependency-tracking
+    #   --prefix=#{prefix}
+    #   --enable-amd64=no
+    # ]
     # args << "--without-x" if build.without? "x"
 
     system "./configure", *args
